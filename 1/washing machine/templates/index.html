@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washing Machine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script src="{{ url_for('static', filename='rotate.js') }}"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="machine-status">
+            <p>Status: <span id="status">Idle</span></p>
+            <p>Stage: <span id="stage">None</span></p>
+        </div>
+
+        <div class="washing-machine">
+            <div class="body">
+                <div class="door">
+                    <div class="glass" id="glass">
+                        <div class="item item1"></div>
+                        <div class="item item2"></div>
+                        <div class="item item3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <!-- <button class="control-panel" onclick="openModal()">Control Panel</button> -->
+
+                <button class="power-button" id="power-button">
+                    <img src="{{ url_for('static', filename='icons/power.png') }}" alt="Power Icon" width="50">
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Some text in the Modal...</p>
+        </div>
+    </div> -->
+</body>
+
+</html>
